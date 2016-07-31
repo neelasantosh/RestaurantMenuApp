@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fooditemcell" id="QTX-hX-s8j" customClass="FoodItemTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QTX-hX-s8j" id="suR-TC-Cfk">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jKQ-6u-pTU">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="10" y="10" width="130" height="130"/>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4vZ-IK-f5N">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="148" y="66" width="154" height="21"/>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxh-yT-lki">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <color key="backgroundColor" red="0.22352941179999999" green="0.64705882349999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="plus.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="305" y="20" width="32" height="32"/>
+                        </variation>
+                        <connections>
+                            <action selector="onClickButtonPlus:" destination="QTX-hX-s8j" eventType="touchUpInside" id="srE-HP-LYv"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwe-vW-Nys">
+                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                        <color key="backgroundColor" red="0.22352941179999999" green="0.64705882349999999" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" image="minus.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="305" y="98" width="32" height="32"/>
+                        </variation>
+                        <connections>
+                            <action selector="onClickButtonMinus:" destination="QTX-hX-s8j" eventType="touchUpInside" id="eC5-Ru-Y9B"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0gQ-JP-mlC">
+                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="305" y="62" width="32" height="30"/>
+                        </variation>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name : " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIu-bc-RLM">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="148" y="25" width="154" height="21"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="jKQ-6u-pTU"/>
+                        <exclude reference="4vZ-IK-f5N"/>
+                        <exclude reference="sxh-yT-lki"/>
+                        <exclude reference="nwe-vW-Nys"/>
+                        <exclude reference="0gQ-JP-mlC"/>
+                        <exclude reference="cIu-bc-RLM"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="jKQ-6u-pTU"/>
+                        <include reference="4vZ-IK-f5N"/>
+                        <include reference="sxh-yT-lki"/>
+                        <include reference="nwe-vW-Nys"/>
+                        <include reference="0gQ-JP-mlC"/>
+                        <include reference="cIu-bc-RLM"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.38862823610000002" green="0.84143077990000004" blue="0.90588235289999997" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="imageView" destination="jKQ-6u-pTU" id="eTO-GF-kzC"/>
+                <outlet property="itemNameLabel" destination="cIu-bc-RLM" id="Mfi-rR-5Rs"/>
+                <outlet property="priceLabel" destination="4vZ-IK-f5N" id="rza-HI-E0K"/>
+                <outlet property="textQty" destination="0gQ-JP-mlC" id="1Xl-t8-MIp"/>
+            </connections>
+            <point key="canvasLocation" x="483" y="455"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="minus.png" width="32" height="32"/>
+        <image name="plus.png" width="32" height="32"/>
+    </resources>
+</document>
